@@ -10,7 +10,7 @@ public class Win {
                 arrayHorizontal[j] = board[i][j];
                 arrayVertical[j] = board[j][i];
             }
-            if(checkRowLine(arrayHorizontal) || checkRowLine(arrayVertical)) {
+            if (checkRowLine(arrayHorizontal) || checkRowLine(arrayVertical)) {
                 rsl = true;
                 break;
             }
@@ -21,7 +21,7 @@ public class Win {
     public static boolean checkRowLine(int[] rowLine) {
         boolean rsl = true;
         for (int i = 0; i < rowLine.length; i++) {
-            if(rowLine[i] == 0) {
+            if (rowLine[i] == 0) {
                 rsl = false;
             }
         }
